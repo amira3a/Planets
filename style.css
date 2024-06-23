@@ -1,0 +1,575 @@
+@font-face {
+	font-family:"Antonio-Medium" ;
+	src: url(./static/Antonio-Medium.ttf);
+}
+@font-face {
+	font-family:'LeagueSpartan-Regular' ;
+	src: url(./static/LeagueSpartan-Regular.ttf);
+}
+@font-face {
+	font-family:"LeagueSpartan-Bold" ;
+	src: url(./static/LeagueSpartan-Bold.ttf);
+}
+
+
+
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+#page { 
+	background-color: hsl(240 67 8);
+	background-image: url(./assets/background-stars.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+nav{
+	width: 95.556%;
+	height: 8.21%;
+	padding: 0 2.223%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid hsla(0, 0%, 59%, 0.2);
+}
+#logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#logoTe{
+	font-family:"Antonio-Medium" ;
+	font-size: 28px;
+	letter-spacing: -1.05px;
+	color:hsl(0 0 100)
+}
+#hamburger{
+	display: none;
+}
+#menu{
+	display: none;
+}
+.planetNamesDiv { 
+	width:665px;
+	height:25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	opacity: 75%;
+}
+.planetName { 
+	color:hsl(0 0 100);
+	font-family:"LeagueSpartan-Bold" ;
+	font-size:11px;
+	letter-spacing:1px;
+	line-height:25px;
+	position: relative;
+	cursor: pointer;
+}
+
+#mercuryBar{
+	display: flex;
+	position: absolute;
+	width: 68px;
+	height: 4px;
+	background-color:hsl(194 48 49) ;
+	top: 0px;
+	left: 51%;
+}
+#venusBar{
+	display: none;
+	position: absolute;
+	width: 48px;
+	height: 4px;
+	background-color:hsl(33 82 61) ;
+	top: 0px;
+	left: 58%;
+}
+#earthBar{
+	display: none;
+	position: absolute;
+	width: 46px;
+	height: 4px;
+	background-color:hsl(263 67 51) ;
+	top: 0px;
+	left: 63.5%;
+}
+#marsBar{
+	display: none;
+	position: absolute;
+	width: 41px;
+	height: 4px;
+	background-color:hsl(10 63 51) ;
+	top: 0px;
+	left: 69.5%;
+}
+#jupiterBar{
+	display: none;
+	position: absolute;
+	width: 57px;
+	height: 4px;
+	background-color:hsl(2 68 53) ;
+	top: 0px;
+	left: 75%;
+}
+#saturnBar{
+	display: none;
+	position: absolute;
+	width: 57px;
+	height: 4px;
+	background-color:hsl(17 73 46) ;
+	top: 0px;
+	left: 81%;
+}
+#uranusBar{
+	display: none;
+	position: absolute;
+	width: 59px;
+	height: 4px;
+	background-color:hsl(169 73 44) ;
+	top: 0px;
+	left:87%;	
+}
+#neptuneBar{
+	display: none;
+	position: absolute;
+	width: 65px;
+	height: 4px;
+	background-color:hsl(222 87 56) ;
+	top: 0px;
+	left:93.4%;
+}
+
+#mobChoseDiv{
+	display: none;
+}
+
+#mainDiv{
+	width: 100%;
+	height: 91%;
+	display: flex;
+	flex-direction: column;
+}
+#topDiv{
+	display: flex;
+	height: 80%;
+}
+.planetImgDiv{
+	width: 64%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#planetDetails{
+	width: 36%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#planetText{
+	display: flex;
+	flex-direction: column;
+	width: 67.519%;
+}
+
+#planetTitle { 
+	width: 79%;
+	color:hsl(0 0 100);
+	font-family:"Antonio-Medium" ;
+	font-size:80px;
+	margin-bottom: 23px;
+}
+#planetDes { 
+	color:hsl(0 0 100);
+	width:100%;
+	height: 150px;
+	opacity: 50%;
+	font-family:'LeagueSpartan-Regular' ;
+	font-size:14px;
+	letter-spacing: 0px;
+	line-height:25px;
+	margin-bottom: 24px;
+}
+#sourceDiv{
+	width: 47%;
+	color:hsl(0 0 100);
+	margin-bottom: 39px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+#sourceDiv img{
+	width: 12px;
+	height: 12px;
+}
+#source{
+	font-family:'LeagueSpartan-Regular' ;
+	font-size:14px;
+	line-height:25px;
+	opacity: 50%;
+}
+#sourceSite{
+	font-family:"LeagueSpartan-Bold" ;
+	font-size: 14px;
+	line-height:25px;
+	color:hsl(0 0 100);
+	opacity: 50%;
+	padding-right: 5px;
+}
+.choseDiv { 
+	width:67.52%;
+	height:23.61%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.buttonDiv { 
+	width:100%;
+	height:27.3%;
+}
+
+.btnNum { 
+	color:hsl(0 0 100);
+	opacity:50%;
+	font-family:"LeagueSpartan-Bold" ;
+	font-size:12px;
+	letter-spacing:2.57px;
+	line-height:25px;
+}
+.btnText { 
+	color:hsl(0 0 100);
+	padding-left: 25px;
+	font-family:"LeagueSpartan-Bold" ;
+	font-size:12px;
+	letter-spacing:2.57px;
+	line-height:25px;
+}
+
+.btn { 
+	display: flex;
+	align-items: center;
+	background-color: transparent;
+	width:99.71%;
+	height:97.85%;
+	border: 1px solid hsla(0, 0%, 85%, 0.2);
+	padding-left: 30px;
+}
+
+.btn:hover{
+	background-color:hsla(0, 0%, 85%, 0.2) ;
+	cursor: pointer;
+}
+.btn.clicked{
+	background-color: hsl(194 48 50);
+}
+
+
+
+
+#bottomDiv{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 11.459%;
+	height: 13.74%;
+}
+.planetNumbers{
+	display: flex;
+	flex-direction: column;
+	width: 18.65%;
+	height: 62.32%;
+	padding: 20px 23px;
+	border: 1px solid hsla(0, 0%, 85%, 0.2);
+	color:hsl(0 0 100) ;
+}
+.numTitle{
+	font-family:"LeagueSpartan-Bold" ;
+	font-size: 11px;
+	opacity: 50%;
+	line-height:25px ;
+	letter-spacing: 1px;
+}
+.numPlanet{
+	font-family:"Antonio-Medium" ;
+	font-size: 40px;
+	letter-spacing: -1.5px;
+}
+
+
+@media only screen and (max-width: 768px){
+	nav{
+	height: 16%;
+	flex-direction: column;
+	justify-content: center;
+	gap: 39px;
+}
+.planetNamesDiv { 
+	width:90.618%;
+	height:25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	opacity: 75%;
+}
+#mercuryBar{
+	visibility: hidden;
+}
+#venusBar{
+	visibility: hidden;
+}
+#earthBar{
+	visibility: hidden;
+}
+#marsBar{
+	visibility: hidden;
+}
+#jupiterBar{
+	visibility: hidden;
+}
+#saturnBar{
+	visibility: hidden;
+}
+#uranusBar{
+	visibility: hidden;	
+}
+#neptuneBar{
+	visibility: hidden;
+}
+#topDiv{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 86%;
+}
+.planetImgDiv{
+	width: 100%;
+	height: 460px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#planetDetails{
+	width: 89.9%;
+	padding: 0 5.05%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+#planetText{
+	display: flex;
+	flex-direction: column;
+	width: 49.11%;
+}
+
+#planetDes{
+	width: 100%;
+	height: 110px;
+	font-size:11px;
+	line-height:22px;
+}
+#planetTitle { 
+	font-size:48px;
+}
+#sourceDiv{
+	width: 40%;
+	margin-bottom: 25px;
+}
+#source{
+	font-size: 12px;
+}
+#sourceSite{
+	font-size: 12px;
+}
+.choseDiv { 
+	width:40.7%;
+	height:152px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#bottomDiv{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 5.05%;
+	height: 10.12%;
+}
+.planetNumbers{
+	width: 19.7%;
+	height: 75%;
+	padding: 10px 13px;
+}
+.numTitle{
+	font-size: 8px;
+	line-height:16px ;
+	letter-spacing: 0.73px;
+}
+.numPlanet{
+	font-size: 24px;
+	letter-spacing: -0.9px;
+}
+}
+
+@media only screen and (max-width: 375px){
+	nav{
+	width: 87.21%;
+	height: 68px;
+	padding: 0 6.4%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid hsla(0, 0%, 59%, 0.2);
+}
+#menu{
+	display: none;
+	flex-direction: column;
+	width: 87.21%;
+	height: 510px;
+	padding: 24px 6.4%;
+	background-color: hsl(240 67 8);
+	color: hsl(0 0 100);
+	font-family:"LeagueSpartan-Bold" ;
+	font-size: 15px;
+	line-height:25px ;
+	letter-spacing: 1.36px;
+	position: absolute;
+	z-index: 3;
+	top: 69px;
+}
+#menu.active{
+	display: flex;
+}
+.mobPlanetName{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+}
+.planetNameText{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+}
+hr{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid hsla(0, 0%, 59%, 0.1);
+	margin: 0;
+}
+.planetNamesDiv { 
+	display: none;
+
+}
+#hamburger{
+	display: flex;
+	
+}
+
+#mobChoseDiv{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 87.21%;
+	height: 10px;
+	padding: 20px 6.4%;
+	border-bottom: 1px solid hsla(0, 0%, 59%, 0.2);
+}
+.mobBtnText {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80px; 
+	font-family:"LeagueSpartan-Bold" ;
+	color: hsl(0 0 100);
+	font-size:9px;
+	letter-spacing:1.93px;
+}
+.mobBar{
+	position: absolute;
+	width: 80px;
+	height: 4px;
+	background-color:transparent ;
+	top: 117px;
+}
+.mobBar.mobclicked{
+		background-color:hsl(194 48 50) ;
+
+}
+
+#mainDiv{
+	height: 87.5%;
+}
+#topDiv{
+	justify-content: space-between;
+	height: 68%;
+}
+.planetImgDiv{
+	height: 304px;
+}
+#planetDetails{
+	width: 87.21%;
+	padding: 0 6.4%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.choseDiv { 
+	display: none;
+}
+#planetTitle{
+	width: 100%;
+	font-size: 40px;
+}
+#planetText{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: center;
+}
+#sourceDiv{
+	width: 100%;
+	justify-content: center;
+}
+#bottomDiv{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 87.21%;
+	padding: 0 6.4%;
+	height: 216px;
+}
+.planetNumbers{
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 84.71%;
+	height: 26px;
+	padding: 10px 24px;
+}
+.numPlanet{
+	font-size: 20px;
+	letter-spacing: -0.75px;
+	line-height: auto;
+}
+
+
+}

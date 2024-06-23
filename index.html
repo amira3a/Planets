@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Planet Project</title>
+  </head>
+  <body>
+    <div id="page">
+      <nav>
+        <div id="logo">
+          <span id="logoTe">THE PLANENTS</span>
+        </div>
+<svg id="hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="17"><g id="toggleColor" fill="#FFF" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z"/></g></svg>        
+        <div class="planetNamesDiv">
+          <div id="mercuryBar"></div>
+          <div class="planetName" id="mercury">MERCURY</div>
+          <div id="venusBar"></div>
+          <span class="planetName" id="venus">VENUS</span>
+          <div id="earthBar"></div>
+          <span class="planetName" id="earth">EARTH</span>
+          <div id="marsBar"></div>
+          <span class="planetName" id="mars">MARS</span>
+          <div id="jupiterBar"></div>
+          <span class="planetName" id="jupiter">JUPITER</span>
+          <div id="saturnBar"></div>
+          <span class="planetName" id="saturn">SATURN</span>
+          <div id="uranusBar"></div>
+          <span class="planetName" id="uranus">URANUS</span>
+          <div id="neptuneBar"></div>
+          <span class="planetName" id="neptune">NEPTUNE</span>
+        </div>
+      </nav>
+
+      <div id="menu">
+
+      <div class="mobPlanetName" id="mercury">
+        <div class="planetNameText">
+        <img src="./assets/mercuryOval.png" alt="">
+        <span>MERCURY</span>
+        </div>
+        <img src="./assets/icon-chevron.svg" alt="">
+      </div>
+      <hr>
+
+      <div class="mobPlanetName" id="venus">
+        <div class="planetNameText">
+        <img src="./assets/venusOval.png" alt="">
+        <span>VENUS</span>
+        </div>
+        <img src="./assets/icon-chevron.svg" alt="">
+      </div>
+      <hr>
+
+      <div class="mobPlanetName" id="earth">
+        <div class="planetNameText">
+        <img src="./assets/earthOval.png" alt="">
+        <span>EARTH</span>
+        </div>
+        <img src="./assets/icon-chevron.svg" alt="">
+      </div>
+      <hr>
+
+      <div class="mobPlanetName" id="mars">
+        <div class="planetNameText">
+        <img src="./assets/marsOval.png" alt="">
+        <span>MARS</span>
+        </div>
+        <img src="./assets/icon-chevron.svg" alt="">
+      </div>
+      <hr>
+
+      <div class="mobPlanetName" id="jupiter">
+        <div class="planetNameText">
+        <img src="./assets/jupiterOval.png" alt="">
+        <span>JUPITER</span>
+        </div>
+        <img src="./assets/icon-chevron.svg" alt="">
+      </div>
+      <hr>
+
+      <div class="mobPlanetName" id="saturn">
+        <div class="planetNameText">
+        <img src="./assets/saturnOval.png" alt="">
+        <span>SATURN</span>
+        </div>
+        <img src="./assets/icon-chevron.svg" alt="">
+      </div>
+      <hr>
+
+      <div class="mobPlanetName" id="uranus">
+        <div class="planetNameText">
+        <img src="./assets/uranusOval.png" alt="">
+        <span>URANUS</span>
+        </div>
+        <img src="./assets/icon-chevron.svg" alt="">
+      </div>
+      <hr>
+
+      <div class="mobPlanetName" id="neptune">
+        <div class="planetNameText">
+        <img src="./assets/neptuneOval.png" alt="">
+        <span>NEPTUNE</span>
+        </div>
+        <img src="./assets/icon-chevron.svg" alt="">
+      </div>
+        </div>
+
+      <div id="mobChoseDiv">
+
+              <div class="mobButtonDiv">
+                <div class="mobBtn" id="mobOverBtn">
+                  <span class="mobBtnText">OVERVIEW</span>
+                </div>
+                <div class="mobBar mobclicked" id="btnBar1"></div>
+              </div>
+              
+              <div class="mobButtonDiv">
+                <div class="mobBtn" id="mobInterBtn">
+                  <span class="mobBtnText">STRUCTURE</span>
+                </div>
+                <div class="mobBar" id="btnBar2"></div>
+              </div>
+              
+              <div class="mobButtonDiv">
+                <div class="mobBtn"  id="mobSurfBtn">
+                  <span class="mobBtnText">SURFACE</span>
+                </div>
+                <div class="mobBar" id="btnBar3"></div>
+              </div>
+              
+            </div>
+      <main id="mainDiv">
+        <div id="topDiv">
+          <div class="planetImgDiv">
+            <img  id="planetImg" src="./assets/planet-mercury.svg" alt="" />
+          </div>
+          <div id="planetDetails">
+            <div id="planetText">
+            <span id="planetTitle">MERCURY</span>
+            <span id="planetDes">Mercury is the smallest planet in the Solar System and the
+              closest to the Sun. Its orbit around the Sun takes 87.97 Earth
+              days, the shortest of all the Sun's planets. Mercury is one of
+              four terrestrial planets in the Solar System, and is a rocky body
+              like Earth.</span>
+            <div id="sourceDiv">
+              <span id="source">Source :</span>
+              <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" id="sourceSite" target="_blank">Wikipedia</a>
+              <img src="./assets/icon-source.svg" alt="" />
+            </div>
+            </div>
+            <div class="choseDiv">
+              <div class="buttonDiv">
+                <button class="btn clicked" id="button1">
+                  <span class="btnNum">01</span
+                  ><span class="btnText">OVERVIEW</span>
+                </button>
+              </div>
+              <div class="buttonDiv">
+                <button class="btn" id="button2">
+                  <span class="btnNum">02</span
+                  ><span class="btnText">INTERNAL STRUCTURE</span>
+                </button>
+              </div>
+              <div class="buttonDiv">
+                <button class="btn"  id="button3">
+                  <span class="btnNum">03</span
+                  ><span class="btnText">SURFACE GEOLOGY</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="bottomDiv">
+          <div class="planetNumbers">
+            <span class="numTitle">ROTATION TIME</span>
+            <label class="numPlanet" id="rotation">58.6 DAYS</label>
+          </div>
+          <div class="planetNumbers">
+            <span class="numTitle" >REVOLUTION TIME</span> <label class="numPlanet" id="revolution">87.97 DAYS</label>
+          </div>
+          <div class="planetNumbers">
+            <span class="numTitle" >RADIUS</span> <label class="numPlanet" id="radius">2,439.7 KM</label>
+          </div>
+          <div class="planetNumbers" >
+            <span class="numTitle">AVERAGE TEMP.</span> <label class="numPlanet" id="temperature">430°c</label>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./project.js"></script>
+  </body>
+</html>
