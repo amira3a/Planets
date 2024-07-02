@@ -66,93 +66,62 @@ nav{
 }
 .planetNamesDiv { 
 	width:665px;
-	height:25px;
+	height:100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	opacity: 75%;
 }
 .planetName { 
+	height:100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
 	color:hsl(0 0 100);
 	font-family:"LeagueSpartan-Bold" ;
 	font-size:11px;
 	letter-spacing:1px;
 	line-height:25px;
-	position: relative;
 	cursor: pointer;
 }
-
-#mercuryBar{
+.Barweb{
 	display: flex;
 	position: absolute;
-	width: 68px;
+	width: 100%;
 	height: 4px;
+	top: 0;
+}
+#mercuryBar{
 	background-color:hsl(194 48 49) ;
-	top: 0px;
-	left: 51%;
 }
 #venusBar{
 	display: none;
-	position: absolute;
-	width: 48px;
-	height: 4px;
 	background-color:hsl(33 82 61) ;
-	top: 0px;
-	left: 58%;
 }
 #earthBar{
 	display: none;
-	position: absolute;
-	width: 46px;
-	height: 4px;
 	background-color:hsl(263 67 51) ;
-	top: 0px;
-	left: 63.5%;
 }
 #marsBar{
 	display: none;
-	position: absolute;
-	width: 41px;
-	height: 4px;
 	background-color:hsl(10 63 51) ;
-	top: 0px;
-	left: 69.5%;
 }
 #jupiterBar{
 	display: none;
-	position: absolute;
-	width: 57px;
-	height: 4px;
 	background-color:hsl(2 68 53) ;
-	top: 0px;
-	left: 75%;
 }
 #saturnBar{
 	display: none;
-	position: absolute;
-	width: 57px;
-	height: 4px;
 	background-color:hsl(17 73 46) ;
-	top: 0px;
-	left: 81%;
 }
 #uranusBar{
 	display: none;
-	position: absolute;
-	width: 59px;
-	height: 4px;
 	background-color:hsl(169 73 44) ;
-	top: 0px;
-	left:87%;	
 }
 #neptuneBar{
 	display: none;
-	position: absolute;
-	width: 65px;
-	height: 4px;
 	background-color:hsl(222 87 56) ;
-	top: 0px;
-	left:93.4%;
 }
 
 #mobChoseDiv{
@@ -326,28 +295,7 @@ nav{
 	align-items: center;
 	opacity: 75%;
 }
-#mercuryBar{
-	visibility: hidden;
-}
-#venusBar{
-	visibility: hidden;
-}
-#earthBar{
-	visibility: hidden;
-}
-#marsBar{
-	visibility: hidden;
-}
-#jupiterBar{
-	visibility: hidden;
-}
-#saturnBar{
-	visibility: hidden;
-}
-#uranusBar{
-	visibility: hidden;	
-}
-#neptuneBar{
+.Barweb{
 	visibility: hidden;
 }
 #topDiv{
@@ -488,8 +436,8 @@ hr{
 	justify-content: space-between;
 	align-items: center;
 	width: 87.21%;
-	height: 10px;
-	padding: 20px 6.4%;
+	height: 49px;
+	padding: 0px 6.4%;
 	border-bottom: 1px solid hsla(0, 0%, 59%, 0.2);
 }
 .mobBtnText {
@@ -502,12 +450,19 @@ hr{
 	font-size:9px;
 	letter-spacing:1.93px;
 }
+.mobButtonDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	position: relative;
+}
 .mobBar{
 	position: absolute;
 	width: 80px;
 	height: 4px;
 	background-color:transparent ;
-	top: 117px;
+	bottom: 0px;
 }
 .mobBar.mobclicked{
 		background-color:hsl(194 48 50) ;
