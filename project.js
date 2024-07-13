@@ -94,27 +94,27 @@ function changeMobCssClassAttribute(className, attributeName, newValue) {
       
     // Loop through each stylesheet
     for (let i = 0; i < styleSheets.length; i++) {
-        const styleSheet = styleSheets[i];
-          //console.log(styleSheet);
+      const styleSheet = styleSheets[i];
+      //console.log(styleSheet);
 
-        // Get all the rules in the stylesheet
-        const rules = styleSheet.cssRules;
+      // Get all the rules in the stylesheet
+      const rules = styleSheet.cssRules;
 
-
-        // Loop through each rule 
+      // Loop through each rule
       for (let j = 0; j < rules.length; j++) {
-          //important step
-          const rule = rules[45].cssRules[11];
-          //console.log(rule)
-            // Check if the rule is a style rule and matches the desired class
-          if (rule.type === CSSRule.STYLE_RULE &&
-            rule.selectorText === className) {
-            
-                // Change the desired attribute
-                rule.style[attributeName] = newValue;
-                break;
-            }
+        const rule = rules[46].cssRules[12];
+        
+
+        // Check if the rule is a style rule and matches the desired class
+        if (
+          rule.selectorText === className
+        ) {
+          // Change the desired attribute
+          rule.style[attributeName] = newValue;
+          break;
         }
+        console.log(rule);
+      }
     }
 }
 
@@ -125,6 +125,8 @@ fetch("./data.json")
   .then((data) => {
 
     planetImg.style.width = "31.468%";
+    
+
     
 
 mobOverBtn.onclick = function () {
@@ -291,7 +293,7 @@ for (let index = 0; index < planetName.length; index++) {
             "hsl(2 68 53)"
           );
           jupiterBar.style.display = "flex";
-          planetImg.style.width = "63.153%";
+          planetImg.style.width = "60%";
 
         } else {
           jupiterBar.style.display = "none";
@@ -304,7 +306,7 @@ for (let index = 0; index < planetName.length; index++) {
             "hsl(17 73 46)"
           );
           saturnBar.style.display = "flex";
-          planetImg.style.width = "72.3%";
+          planetImg.style.width = "61%";
 
         } else {
           saturnBar.style.display = "none";
@@ -345,11 +347,22 @@ for (let index = 0; index < planetName.length; index++) {
 
 
 
+
+//mob
 var toggleButton = document.getElementById("hamburger");
 var toggleColor = document.getElementById("toggleColor");
 var menu = document.getElementById("menu");
 var mobPlanetName = document.getElementsByClassName("mobPlanetName");
 var overBtnBar = document.getElementById("overBtnBar");
+var mobmercury = document.getElementById("mobmercury");
+var mobvenus = document.getElementById("mobvenus");
+var mobearth = document.getElementById("mobearth");
+var mobmars = document.getElementById("mobmars");
+var mobjupiter = document.getElementById("mobjupiter");
+var mobsaturn = document.getElementById("mobsaturn");
+var moburanus = document.getElementById("moburanus");
+var mobneptune = document.getElementById("mobneptune");
+
 
 //btnBar1.style.backgroundColor = "hsl(194 48 50)";
 toggleButton.onclick = function () {
@@ -406,25 +419,25 @@ for (let index = 0; index < mobPlanetName.length; index++) {
 
 
 
-        if (planetName[index] == mercury) {
+        if (mobPlanetName[index] == mobmercury) {
           //btnBar1.style.backgroundColor = "hsl(194 48 50)";
           changeMobCssClassAttribute(
-            '.mobBar.mobclicked',
+            ".mobBar.mobclicked",
             "backgroundColor",
             "hsl(194 48 50)"
           );
           planetImg.style.width = "31.468%";
         } 
-        if (planetName[index] == venus) {
+        if (mobPlanetName[index] == mobvenus) {
           //btnBar1.style.backgroundColor = "hsl(33 82 61)";
           changeMobCssClassAttribute(
-            '.mobBar.mobclicked',
+            ".mobBar.mobclicked",
             "backgroundColor",
             "hsl(33 82 61)"
           );
           planetImg.style.width = "43.41%";
         } 
-        if (planetName[index] == earth) {
+        if (mobPlanetName[index] == mobearth) {
           //btnBar1.style.backgroundColor = "hsl(263 67 51)";
           changeMobCssClassAttribute(
             '.mobBar.mobclicked',
@@ -433,7 +446,7 @@ for (let index = 0; index < mobPlanetName.length; index++) {
           );
           planetImg.style.width = "48.83%";
         } 
-        if (planetName[index] == mars) {
+        if (mobPlanetName[index] == mobmars) {
           //btnBar1.style.backgroundColor = "hsl(10 63 51)";
           changeMobCssClassAttribute(
             '.mobBar.mobclicked',
@@ -442,7 +455,7 @@ for (let index = 0; index < mobPlanetName.length; index++) {
           );
           planetImg.style.width = "36.46%";
         }
-        if (planetName[index] == jupiter) {
+        if (mobPlanetName[index] == mobjupiter) {
           //btnBar1.style.backgroundColor = "hsl(2 68 53)";
           changeMobCssClassAttribute(
             '.mobBar.mobclicked',
@@ -451,16 +464,16 @@ for (let index = 0; index < mobPlanetName.length; index++) {
           );
           planetImg.style.width = "63.153%";
         } 
-        if (planetName[index] == saturn) {
+        if (mobPlanetName[index] == mobsaturn) {
           //btnBar1.style.backgroundColor = "hsl(17 73 46)";
           changeMobCssClassAttribute(
             '.mobBar.mobclicked',
             "backgroundColor",
             "hsl(17 73 46)"
           );
-          planetImg.style.width = "72.3%";
+          planetImg.style.width = "64%";
         } 
-        if (planetName[index] == uranus) {
+        if (mobPlanetName[index] == moburanus) {
           //btnBar1.style.backgroundColor = "hsl(169 73 44)";
           changeMobCssClassAttribute(
             '.mobBar.mobclicked',
@@ -469,7 +482,7 @@ for (let index = 0; index < mobPlanetName.length; index++) {
           );
           planetImg.style.width = "49.698%";
         } 
-        if (planetName[index] == neptune) {
+        if (mobPlanetName[index] == mobneptune) {
           //btnBar1.style.backgroundColor = "hsl(222 87 56)";
           changeMobCssClassAttribute(
             '.mobBar.mobclicked',
